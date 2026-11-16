@@ -6,7 +6,7 @@ current `kubectl` context so they can be run against the environment under test.
 
 ## Setup
 
-Requires Node.js 18 or newer and, for cluster tests, `kubectl` configured for
+Requires Node.js 20 or newer and, for cluster tests, `kubectl` configured for
 the target cluster.
 
 ```sh

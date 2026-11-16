@@ -10,7 +10,7 @@
     "test:k8s": "jest --config jest.config.js tests/k8s"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "devDependencies": {
     "@playwright/test": "1.65.1",
