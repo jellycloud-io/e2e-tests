@@ -1,0 +1,24 @@
+{
+  "name": "e2e-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "End-to-end tests for the UI, serverless API, and Kubernetes",
+  "scripts": {
+    "test": "npm run test:server && npm run test:ui && npm run test:k8s",
+    "test:ui": "playwright test",
+    "test:server": "jest --config jest.config.js tests/server",
+    "test:k8s": "jest --config jest.config.js tests/k8s"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "jest": "30.5.2"
+  },
+  "overrides": {
+    "deepmerge": "4.1.2",
+    "glob": "14.0.2",
+    "minimatch": "11.0.1"
+  }
+}
